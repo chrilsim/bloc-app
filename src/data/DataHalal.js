@@ -1,10 +1,10 @@
 
-export const DataKorean = [
+export const DataHalal = [
   {
-    id: 'koid-001',
-    username: 'The Laon Korean Cuisine',
-    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202111%2F20211122_84C24778E4926B1F4ADA9854FC0A8C89.jpg&w=1920&q=75`,
-    profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202302%2F20230202_1253072AA3B0D335C59D8111E62294B5.jpg&w=1920&q=75`,
+    id: 'haid-001',
+    username: 'ស្រីមុំបាញ់ស្រុងឆ្ងាញ់',
+    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202101%2F20210104_BC2E1FA5F51B59ED9788A82A1765F6DE.jpeg&w=1920&q=75`,
+    profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202101%2F20210106_3C0AB11DBC9F17B870A385CD60D3D1BA.jpeg&w=1920&q=75`,
     deliveryPrice: 1.16,
     estimatedTime: 35,
     distance: 2530,
@@ -17,24 +17,25 @@ export const DataKorean = [
     isOpen: true,
     promotion: 'Free topping on first order',
     items: [
-      { id: '001', name: 'Brown Sugar Milk Tea', price: 3.5, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202406%2F20240601_D92A9B51532291611439ACF17A1AD999_thumb.jpg&w=1920&q=75`, count: 0, type: 'Drink', isPopular: true,
+      { id: '001', name: 'Brown Sugar Milk Tea', price: 3.5, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202106%2F20210605_87567CFFF168A413B2BFD66A90CA4C10_thumb.jpg&w=1920&q=75`, count: 0, type: 'Drink', isPopular: true,
         options: [
           { id: 'size', title: 'Choose Size', required: true, multiple: false, items: [{ id: 's', name: 'Small', price: 0 }, { id: 'm', name: 'Medium', price: 0.5, isDefault: true }, { id: 'l', name: 'Large', price: 1 }] },
           { id: 'sugar', title: 'Sugar Level', required: true, multiple: false, items: [{ id: 's100', name: '100%', price: 0, isDefault: true }, { id: 's75', name: '75%', price: 0 }, { id: 's50', name: '50%', price: 0 }, { id: 's0', name: '0%', price: 0 }] },
           { id: 'ice', title: 'Ice Level', required: true, multiple: false, items: [{ id: 'full', name: 'Full Ice', price: 0, isDefault: true }, { id: 'less', name: 'Less Ice', price: 0 }, { id: 'no', name: 'No Ice', price: 0 }] },
         ]
       },
-      { id: '002', name: 'Taro Milk Tea', price: 3, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202012%2F20201219_EA49D9E90032D36D013898A7A1903AFC_thumb.jpg&w=1920&q=75`, count: 0, type: 'Drink' },
+      { id: '002', name: 'Taro Milk Tea', price: 3, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202106%2F20210605_F974B36609AB76B8EB8683331A5CE4A2_thumb.jpg&w=1920&q=75`, count: 0, type: 'Drink' },
       { id: '003', name: 'Matcha Latte', price: 4, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202405%2F20240516_2BD65A7C1C12C69BE30C0FEAF785EC3D_thumb.png&w=1920&q=75`, count: 0, type: 'Drink' },
       { id: '004', name: 'Omelette w/ Toast អូមីឡែតនំបុ័ង', price: 4, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202405%2F20240516_2BD65A7C1C12C69BE30C0FEAF785EC3D_thumb.png&w=1920&q=75`, count: 0, type: 'Drink' },
+      { id: '005', name: 'Set Mix YellowNishin+Tako', price: 4, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202405%2F20240516_2BD65A7C1C12C69BE30C0FEAF785EC3D_thumb.png&w=1920&q=75`, count: 0, type: 'Drink' },
     ],
   },
 
   {
-    id: 'koid-002',
-    username: 'LILAY Restaurant',
-    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202109%2F20210902_1130A8FDE3DDC42BE3DEF8BE37429395.jpg&w=1920&q=75`,
-    profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202107%2F20210707_9B7586ECB8D5E22EBC1E3A68F8DB6432.jpg&w=1920&q=75`,
+    id: 'haid-002',
+    username: 'Bassac Pho (BKK) - បាសាក់ ហ្វឺ (បឹងកេងកង)',
+    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202101%2F20210104_E86C2987DCBE3351D273F9BE9E1F9784.png&w=1920&q=75`,
+    profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202205%2F20220506_172D5ACE7CF6BE5A90F7766C8A627CF8.jpg&w=1920&q=75`,
     deliveryPrice: 1.5,
     estimatedTime: 30,
     distance: 1000,
@@ -56,10 +57,10 @@ export const DataKorean = [
   },
 
   {
-    id: 'koid-003',
-    username: 'បង្អែមឆ្ងាញ់ ផ្សារដេប៉ូ',
-    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202311%2F20231108_AE7F666979277F3DFD25DB5B3509347E.jpeg&w=1920&q=75`,
-    profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202302%2F20230202_1253072AA3B0D335C59D8111E62294B5.jpg&w=1920&q=75`,
+    id: 'haid-003',
+    username: 'ត្រីធូណា & សាលម៉ុន ទួលសង្កែ',
+    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202407%2F20240709_14BC1FF1553DDBC9957F6159168066EF.jpeg&w=1920&q=75`,
+    profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202407%2F20240703_CCECCC41D6D62F5008DA8FAA828B2D34.&w=1920&q=75`,
     deliveryPrice: 1,
     estimatedTime: 25,
     distance: 700,
@@ -72,16 +73,16 @@ export const DataKorean = [
     isOpen: true,
     promotion: 'Buy 2 get 1 free',
     items: [
-      { id: '001', name: 'Mango Sticky Rice', price: 3.5, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202601%2F20260105_632E21824D1520069693E56BEE2BF5E6.jpeg&w=1920&q=75`, count: 0, type: 'food', isPopular: true },
-      { id: '002', name: 'Coconut Cake', price: 2, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202601%2F20260105_632E21824D1520069693E56BEE2BF5E6.jpeg&w=1920&q=75`, count: 0, type: 'food' },
+      { id: '001', name: 'Mango Sticky Rice', price: 3.5, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202407%2F20240702_E2AE8A586C203BC6C78E23B84302B56F_thumb.jpg&w=1920&q=75`, count: 0, type: 'food', isPopular: true },
+      { id: '002', name: 'Coconut Cake', price: 2, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202407%2F20240701_AC97DBC0338BB7C002AF15ECDF27E84A_thumb.jpg&w=1920&q=75`, count: 0, type: 'food' },
       { id: '003', name: 'Sweet Porridge', price: 1.5, image: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202601%2F20260105_632E21824D1520069693E56BEE2BF5E6.jpeg&w=1920&q=75`, count: 0, type: 'food' },
     ],
   },
 
   {
-    id: 'koid-004',
-    username: 'Caputea Cambodia II Vanda',
-    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202302%2F20230202_B55F69AA725B5D59FF10528F4422ED38.jpg&w=1920&q=75`,
+    id: 'haid-004',
+    username: 'ផ្ទះម្ហូបស្រែ',
+    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202101%2F20210104_0EDD3652AECF92404B9400ABA45D98F6.jpeg&w=1920&q=75`,
     profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202109%2F20210922_037088F500CC9B11F9FAACF5D4401357.jpg&w=1920&q=75`,
     deliveryPrice: 1.5,
     estimatedTime: 40,
@@ -104,9 +105,9 @@ export const DataKorean = [
   },
 
   {
-    id: 'koid-005',
+    id: 'haid-005',
     username: 'BreakFast Best Choice',
-    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202503%2F20250303_9BC06287B8B13C116C99569F84DF18F6.jpeg&w=1920&q=75`,
+    coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202306%2F20230606_8AC321D45680F4B279FE8FBF4D238426.jpg&w=1920&q=75`,
     profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202107%2F20210726_5AF60A5D32017E81E8AC2D75305D042B.jpg&w=1920&q=75`,
     deliveryPrice: 0.5,
     estimatedTime: 20,
@@ -127,7 +128,7 @@ export const DataKorean = [
   },
 
   {
-    id: 'koid-006',
+    id: 'haid-006',
     username: 'LEGEND CINEMA Food Court',
     coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202109%2F20210917_4DB8AFFD43122520441A916ED0A87CE9.jpg&w=1920&q=75`,
     profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202104%2F20210403_E934F96E9D6F55D499BDB6DB51B78E48.png&w=1920&q=75`,
@@ -152,7 +153,7 @@ export const DataKorean = [
   },
 
   {
-    id: 'koid-007',
+    id: 'haid-007',
     username: 'ស៊ុបមាន់ខ្មៅ31 / Black Chicken Soup',
     coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202203%2F20220314_7FC22F58155B366740B78DE6193DDAD3.jpg&w=1920&q=75`,
     profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202101%2F20210106_390B5550BBCB3FCD3A7B5E5FB30F1CDE.jpeg&w=1920&q=75`,
@@ -177,7 +178,7 @@ export const DataKorean = [
   },
 
   {
-    id: 'koid-008',
+    id: 'haid-008',
     username: 'Discount 15% OFF',
     coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202106%2F20210625_D3D77C64232F275824686E066FD1164B.jpg&w=1920&q=75`,
     profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202606%2F20260613_2A136CB89D6F9316573EDC5EBDF4863B.jpeg&w=1920&q=75`,
@@ -202,7 +203,7 @@ export const DataKorean = [
   },
 
   {
-    id: 'koid-009',
+    id: 'haid-009',
     username: 'លតឆា៣៣ (ផ្សារកណ្ដាល)​',
     coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202108%2F20210824_9C4DA948D6DFB640529C9B0DFC72D6EA.jpg&w=1920&q=75`,
     profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202101%2F20210106_390B5550BBCB3FCD3A7B5E5FB30F1CDE.jpeg&w=1920&q=75`,
@@ -226,7 +227,7 @@ export const DataKorean = [
   },
 
   {
-    id: 'koid-010',
+    id: 'haid-010',
     username: 'Midday Moment Cafe',
     coverImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202505%2F20250502_1F151E92D05B33771027380042A9F506.jpeg&w=1920&q=75`,
     profileImage: `https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202101%2F20210106_33B1A5679D1A5DE4278589819BBAE2F8.jpeg&w=1920&q=75`,
@@ -254,4 +255,4 @@ export const DataKorean = [
   },
 
 ];
-export default DataKorean;
+export default DataHalal;

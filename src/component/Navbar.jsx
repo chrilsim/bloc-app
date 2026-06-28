@@ -89,9 +89,9 @@ const Navbar = () => {
                     <h2 className='p-2 font-medium text-lg'>Menu</h2>
                     <div className="menu-left">
                         <ul>
-                            <li> <img src={food} alt="" /> Food & Drink</li>
-                            <li> <img src={food} alt="" /> Food & Drink</li>
-                            <li> <img src={food} alt="" /> Food & Drink</li>
+                            <li  onClick={() => navigate('/food/khmer')} > <img src={food} alt="" /> Food & Drink</li>
+                            <li onClick={() => navigate('/mart')}> <img src="https://web.bloc.asia/_next/image?url=%2Fimages%2Fpngs%2Fcategory%2Fhome-category%2FMart.png&w=48&q=75" alt="" /> Mart</li>
+                            <li onClick={() => navigate('/mall')}> <img src="https://web.bloc.asia/_next/image?url=%2Fimages%2Fpngs%2Fcategory%2Fhome-category%2Fmall_2.png&w=48&q=75" alt="" /> Mall</li>
                         </ul>
                     </div>
 
@@ -102,7 +102,7 @@ const Navbar = () => {
             </div>
 
             {/* --------------menu right cart-------------- */}
-            <div onClick={() => setOpenMenuRight(false)} className={`fixed rlative items-end justify-end flex inset-0 bg-black/40 z-50 transition-opacity duration-300 ${openMenu_right ? "opacity-100 visible" : "opacity-0 invisible"}`}>
+            <div onClick={() => {setOpenMenuRight(false),setOpenMenuLeft(false)}} className={`fixed rlative items-end justify-end flex inset-0 bg-black/40 z-50 transition-opacity duration-300 ${openMenu_right ? "opacity-100 visible" : "opacity-0 invisible"}`}>
 
                 <div onClick={(e) => e.stopPropagation()} className={` h-full w-[370px] bg-white overflow-y-auto  transform transition-transform duration-300 ease-in-out ${openMenu_right ? "translate-x-0" : "translate-x-full"}`}  >
 
@@ -328,8 +328,8 @@ const Navbar = () => {
                 <div className="manu-nav-diplay max-w-[1500px] m-auto">
                     <ul className='flex'>
                         <li onClick={() => navigate('/food/khmer')} className='bg-white hover:bg-gray-100 py-2 cursor-pointer rounded-sm px-4 flex items-center gap-2' > <img className='w-[30px]' src={food} alt="" /> Food</li>
-                        <li className='bg-white hover:bg-gray-100 py-2 cursor-pointer rounded-sm px-4 flex items-center gap-2' > <img className='w-[30px]' src={food} alt="" /> Mart</li>
-                        <li className='bg-white hover:bg-gray-100 py-2 cursor-pointer rounded-sm px-4 flex items-center gap-2' > <img className='w-[30px]' src={food} alt="" /> Mall</li>
+                        <li onClick={() => navigate('/mart')} className='bg-white hover:bg-gray-100 py-2 cursor-pointer rounded-sm px-4 flex items-center gap-2' > <img className='w-[30px]' src={food} alt="" /> Mart</li>
+                        <li onClick={() => navigate('/mall')} className='bg-white hover:bg-gray-100 py-2 cursor-pointer rounded-sm px-4 flex items-center gap-2' > <img className='w-[30px]' src={food} alt="" /> Mall</li>
                     </ul>
                 </div>
             </div>

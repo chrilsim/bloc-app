@@ -44,40 +44,84 @@ const Food = () => {
                     </div>
                     <div onClick={() => navigate('korean')} className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
                         <img className="w-[80px]" src={korean} alt="" />
-                        <h2><NavLink
-                            to="korean"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "text-blue-500 font-medium"
-                                    : "text-gray-800"
-                            }
-                        >
-                            Korean
-                        </NavLink></h2>
+                        <h2>
+                            <NavLink
+                                to="korean"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-blue-500 font-medium"
+                                        : "text-gray-800"} >
+                                Korean
+                            </NavLink>
+                        </h2>
                     </div>
-                    <div className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
+                    <div onClick={() => navigate('western')} className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
                         <img className="w-[80px]" src={western} alt="" />
-                        <h2>Western</h2>
+                        <h2>
+                            <NavLink
+                                to="western"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-blue-500 font-medium"
+                                        : "text-gray-800"} >
+                                Western
+                            </NavLink>
+                        </h2>
                     </div>
-                    <div className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
+                    <div onClick={() => navigate('chinese')}  className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
                         <img className="w-[80px]" src={chinese} alt="" />
-                        <h2>Chinese</h2>
+                        <h2><NavLink
+                                to="chinese"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-blue-500 font-medium"
+                                        : "text-gray-800"} >
+                                Chinese
+                            </NavLink></h2>
                     </div>
-                    <div className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
+                    <div  onClick={() => navigate('japanese')} className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
                         <img className="w-[80px]" src={japanese} alt="" />
-                        <h2>Japanese</h2>
+                        <h2><NavLink
+                                to="japanese"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-blue-500 font-medium"
+                                        : "text-gray-800"} >
+                                Japanese
+                            </NavLink></h2>
                     </div>
-                    <div className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
+                    <div onClick={() => navigate('india')} className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
                         <img className="w-[80px]" src={india} alt="" />
-                        <h2>India</h2>
+                        <h2><NavLink
+                                to="india"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-blue-500 font-medium"
+                                        : "text-gray-800"} >
+                                India
+                            </NavLink></h2>
                     </div>
-                    <div className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
+                    <div onClick={() => navigate('asia')}  className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
                         <img className="w-[80px]" src={asia} alt="" />
-                        <h2>Asia</h2>
+                        <h2><NavLink
+                                to="asia"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-blue-500 font-medium"
+                                        : "text-gray-800"} >
+                                Asia
+                            </NavLink></h2>
                     </div>
-                    <div className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
+                    <div onClick={() => navigate('halal')} className="flex flex-col py-2 items-center w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-md">
                         <img className="w-[80px]" src={halal} alt="" />
-                        <h2>Halal</h2>
+                        <h2><NavLink
+                                to="halal"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-blue-500 font-medium"
+                                        : "text-gray-800"} >
+                                Halal
+                            </NavLink></h2>
                     </div>
 
                 </div>

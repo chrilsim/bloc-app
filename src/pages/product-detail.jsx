@@ -33,9 +33,9 @@ const Product_Detail = () => {
 
     const { id } = useParams();
 
-const product = AllData.find(
-    (item) => String(item.id) === id
-);
+    const product = AllData.find(
+        (item) => String(item.id) === id
+    );
 
 
     const [selectedItem, setSelectedItem] = useState(null);
@@ -171,6 +171,7 @@ const product = AllData.find(
 
                                                 if (cartItem) {
                                                     increaseQuantity(product.id, p.id);
+                                                    
                                                 } else {
                                                     addToCart(product, p, 1);
                                                 }

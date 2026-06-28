@@ -99,13 +99,13 @@ const Home = () => {
           <h1 className='text-ms sm:text-lg font-medium'>Food & Drink</h1>
           <h2 className='text-gray-400 text-sm'>Fresh & Fast</h2>
           <button className='text-sm absolute  bottom-3 py-2  px-4 bg-blue-500 cursor-pointer hover:bg-blue-600 text-white rounded-3xl'>Order Now</button>
-          <img className='w-[80px] sm:w-[100px] xl:w-[150px] md:w-[120px]  md:w-[100px] absolute right-[-5px] bottom-[-5px]' src="https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202110%2F20211022_EC3A333C4AFF712950956B750F823CAB.png&w=256&q=75" alt="" />
+          <img className='w-[80px] sm:w-[100px] xl:w-[150px] md:w-[120px]  md:w-[100px] absolute right-[-5px] bottom-[-5px]' src="https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202110%2F20211022_2EF764BD8FB3475A29A4D4BFC2114D8E.png&w=256&q=75" alt="" />
         </div>
-        <div className=' overflow-hidden relative p-3  hover:bg-gray-100 cursor-pointer bg-white drop-shadow-[0_0_2px_rgba(0,0,0,0.2)] rounded-lg w-full  col-span-2 md:col-span-1 sm:col-span-2 h-[120px] lg:h-[170px] sm:h-[150px]'>
+        <div onClick={() => navigate('/mall')} className=' overflow-hidden relative p-3  hover:bg-gray-100 cursor-pointer bg-white drop-shadow-[0_0_2px_rgba(0,0,0,0.2)] rounded-lg w-full  col-span-2 md:col-span-1 sm:col-span-2 h-[120px] lg:h-[170px] sm:h-[150px]'>
           <h1 className=' text-ms font-medium sm:text-lg'>Food & Drink</h1>
           <h2 className='text-gray-400 text-sm '>Fresh & Fast</h2>
           <button className='text-sm absolute  bottom-3 py-2  px-4 bg-blue-500 cursor-pointer hover:bg-blue-600 text-white rounded-3xl'>Order Now</button>
-          <img className='w-[80px] sm:w-[100px] xl:w-[150px] md:w-[120px]  md:w-[100px] absolute right-[-5px] bottom-[-5px]' src="https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202110%2F20211022_EC3A333C4AFF712950956B750F823CAB.png&w=256&q=75" alt="" />
+          <img className='w-[80px] sm:w-[100px] xl:w-[150px] md:w-[120px]  md:w-[100px] absolute right-[-5px] bottom-[-5px]' src="https://web.bloc.asia/_next/image?url=https%3A%2F%2Fd181tbps8cjyve.cloudfront.net%2Fphoto%2F202110%2F20211022_2E2AC4D5E69A215E4C82BEDD33AB1931.png&w=256&q=75" alt="" />
         </div>
       </div>
 

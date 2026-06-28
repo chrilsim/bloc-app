@@ -8,11 +8,10 @@ import { useNavigate } from "react-router-dom";
 import tranding1 from "../assets/tranding1.png"
 import tranding2 from "../assets/tranding2.png"
 import tranding3 from "../assets/tranding3.png"
-import tranding4 from "../assets/tranding4.png";
-import DataKhmers from "../data/DataKhmer.js";
+import tranding4 from "../assets/tranding4.png"
+import DataHalals from '../data/DataHalal';
 
-
-const Khmer = () => {
+const Halal = () => {
     const navigate = useNavigate();
     const imgSlider = useMemo(
         () => [
@@ -30,10 +29,11 @@ const Khmer = () => {
 
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = useState(4);
-    const [dataKhmer, setDataKhmer] = useState([]);
+    const [datHalal, setDataHalal] = useState([]);
     const intervalRef = useRef(null);
+
     useEffect(() => {
-        setDataKhmer(DataKhmers);
+        setDataHalal(DataHalals);
         const handleResize = () => {
             if (window.innerWidth < 640) setVisible(1);
             else if (window.innerWidth < 1024) setVisible(2);
@@ -48,7 +48,6 @@ const Khmer = () => {
 
     const maxIndex = Math.max(imgSlider.length - visible, 0);
 
-    // auto slide
     const resetInterval = () => {
         if (intervalRef.current) clearInterval(intervalRef.current);
 
@@ -65,7 +64,6 @@ const Khmer = () => {
         };
     }, [maxIndex]);
 
-    // controls
     const prev = () => {
         setIndex((i) => Math.max(i - 1, 0));
         resetInterval();
@@ -136,10 +134,10 @@ const Khmer = () => {
             </div>
 
             {/* ------------------Explore Near You----------- */}
-            <h1 className='text-xl font-medium'>All “Khmer“ Store Near you</h1>
+            <h1 className='text-xl font-medium'>All “Korean“ Store Near you</h1>
             <div className='items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mt-4 '>
                 {
-                    dataKhmer.map((item) => (
+                    datHalal.map((item) => (
                         <Link to={`/product-detail/${item.id}`} key={item.id}>
                             <div className=' bg-gray-100 rounded-lg overflow-hidden gap-3 drop-shadow-[0_0_2px_rgba(0,0,0,0.2)]'>
                                 <div className='imgs w-full relative'>
@@ -169,4 +167,4 @@ const Khmer = () => {
         </div>
     );
 }
-export default Khmer
+export default Halal

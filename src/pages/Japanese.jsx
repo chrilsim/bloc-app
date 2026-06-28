@@ -9,10 +9,10 @@ import tranding1 from "../assets/tranding1.png"
 import tranding2 from "../assets/tranding2.png"
 import tranding3 from "../assets/tranding3.png"
 import tranding4 from "../assets/tranding4.png";
-import DataKhmers from "../data/DataKhmer.js";
+import DataJapaneses from "../data/DataJapanese.js";
 
 
-const Khmer = () => {
+const Japanese = () => {
     const navigate = useNavigate();
     const imgSlider = useMemo(
         () => [
@@ -30,10 +30,10 @@ const Khmer = () => {
 
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = useState(4);
-    const [dataKhmer, setDataKhmer] = useState([]);
+    const [dataJapanese, setDataJapanese] = useState([]);
     const intervalRef = useRef(null);
     useEffect(() => {
-        setDataKhmer(DataKhmers);
+        setDataJapanese(DataJapaneses);
         const handleResize = () => {
             if (window.innerWidth < 640) setVisible(1);
             else if (window.innerWidth < 1024) setVisible(2);
@@ -139,7 +139,7 @@ const Khmer = () => {
             <h1 className='text-xl font-medium'>All “Khmer“ Store Near you</h1>
             <div className='items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mt-4 '>
                 {
-                    dataKhmer.map((item) => (
+                    dataJapanese.map((item) => (
                         <Link to={`/product-detail/${item.id}`} key={item.id}>
                             <div className=' bg-gray-100 rounded-lg overflow-hidden gap-3 drop-shadow-[0_0_2px_rgba(0,0,0,0.2)]'>
                                 <div className='imgs w-full relative'>
@@ -169,4 +169,4 @@ const Khmer = () => {
         </div>
     );
 }
-export default Khmer
+export default Japanese
